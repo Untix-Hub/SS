@@ -1,0 +1,154 @@
+local infoGUI = Instance.new("ScreenGui")
+local Holding = Instance.new("Frame")
+local Health = Instance.new("Frame")
+local HealthInfo = Instance.new("TextLabel")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local Health_2 = Instance.new("Frame")
+local HealthTag = Instance.new("TextLabel")
+local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
+local backHealth = Instance.new("Frame")
+local Player = Instance.new("Frame")
+local PlayerInfo = Instance.new("TextLabel")
+local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
+local User = Instance.new("TextLabel")
+local UIPadding = Instance.new("UIPadding")
+local UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint")
+local PlayerPic = Instance.new("ImageLabel")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+
+infoGUI.Name = "infoGUI"
+infoGUI.Parent = game:WaitForChild("CoreGui")
+infoGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Holding.Name = "Holding"
+Holding.Parent = infoGUI
+Holding.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Holding.BackgroundTransparency = 1.000
+Holding.Position = UDim2.new(0, 0, 0.291999996, 0)
+Holding.Size = UDim2.new(0.399635047, 0, 0.760655761, 0)
+
+Health.Name = "Health"
+Health.Parent = Holding
+Health.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Health.BackgroundTransparency = 1.000
+Health.Position = UDim2.new(0, 0, 0.101927377, 0)
+Health.Size = UDim2.new(1, 0, 0.172175065, 0)
+
+HealthInfo.Name = "HealthInfo"
+HealthInfo.Parent = Health
+HealthInfo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HealthInfo.BackgroundTransparency = 1.000
+HealthInfo.Position = UDim2.new(0.0159817357, 0, -0.0116378693, 0)
+HealthInfo.Size = UDim2.new(0.189497724, 0, 0.386611253, 0)
+HealthInfo.ZIndex = 2
+HealthInfo.Font = Enum.Font.Arcade
+HealthInfo.Text = "Health"
+HealthInfo.TextColor3 = Color3.fromRGB(255, 41, 41)
+HealthInfo.TextScaled = true
+HealthInfo.TextSize = 23.000
+HealthInfo.TextStrokeTransparency = 0.000
+HealthInfo.TextWrapped = true
+
+UITextSizeConstraint.Parent = HealthInfo
+UITextSizeConstraint.MaxTextSize = 23
+
+Health_2.Name = "Health"
+Health_2.Parent = Health
+Health_2.BackgroundColor3 = Color3.fromRGB(255, 217, 0)
+Health_2.Position = UDim2.new(0.0159817357, 0, 0.369670331, 0)
+Health_2.Size = UDim2.new(0.92694062, 0, 0.311690658, 0)
+Health_2.ZIndex = 2
+
+HealthTag.Name = "HealthTag"
+HealthTag.Parent = Health_2
+HealthTag.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HealthTag.BackgroundTransparency = 1.000
+HealthTag.Position = UDim2.new(0.258454114, 0, 0, 0)
+HealthTag.Size = UDim2.new(0.483091801, 0, 1, 0)
+HealthTag.Font = Enum.Font.Arcade
+HealthTag.Text = "nil / nil"
+HealthTag.TextColor3 = Color3.fromRGB(255, 255, 255)
+HealthTag.TextScaled = true
+HealthTag.TextSize = 14.000
+HealthTag.TextStrokeTransparency = 0.000
+HealthTag.TextWrapped = true
+
+UITextSizeConstraint_2.Parent = HealthTag
+UITextSizeConstraint_2.MaxTextSize = 14
+
+backHealth.Name = "backHealth"
+backHealth.Parent = Health
+backHealth.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+backHealth.Position = UDim2.new(0.0159817357, 0, 0.374973387, 0)
+backHealth.Size = UDim2.new(0.926999986, 0, 0.312000006, 0)
+
+Player.Name = "Player"
+Player.Parent = Holding
+Player.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Player.BackgroundTransparency = 1.000
+Player.Size = UDim2.new(0.942922354, 0, 0.0999236479, 0)
+
+PlayerInfo.Name = "PlayerInfo"
+PlayerInfo.Parent = Player
+PlayerInfo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerInfo.BackgroundTransparency = 1.000
+PlayerInfo.Position = UDim2.new(0.0169491526, 0, 0.437308639, 0)
+PlayerInfo.Size = UDim2.new(0.25407353, 0, 0.812500119, 0)
+PlayerInfo.Font = Enum.Font.Arcade
+PlayerInfo.Text = "Player:"
+PlayerInfo.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlayerInfo.TextScaled = true
+PlayerInfo.TextSize = 23.000
+PlayerInfo.TextStrokeTransparency = 0.000
+PlayerInfo.TextWrapped = true
+PlayerInfo.TextXAlignment = Enum.TextXAlignment.Left
+
+UITextSizeConstraint_3.Parent = PlayerInfo
+UITextSizeConstraint_3.MaxTextSize = 23
+
+User.Name = "User"
+User.Parent = Player
+User.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+User.BackgroundTransparency = 1.000
+User.Position = UDim2.new(0.232445523, 0, 0.437308788, 0)
+User.Size = UDim2.new(0.767554462, 0, 0.75, 0)
+User.Font = Enum.Font.Arcade
+User.Text = "nil"
+User.TextColor3 = Color3.fromRGB(255, 255, 255)
+User.TextScaled = true
+User.TextSize = 18.000
+User.TextStrokeTransparency = 0.000
+User.TextWrapped = true
+User.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding.Parent = User
+UIPadding.PaddingLeft = UDim.new(0, 5)
+UIPadding.PaddingTop = UDim.new(0, 1)
+
+UITextSizeConstraint_4.Parent = User
+UITextSizeConstraint_4.MaxTextSize = 18
+
+PlayerPic.Name = "PlayerPic"
+PlayerPic.Parent = Player
+PlayerPic.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerPic.BorderSizePixel = 0
+PlayerPic.Position = UDim2.new(0.838587523, 0, 0.179099649, 0)
+PlayerPic.Size = UDim2.new(0.159322903, 0, 1.35416663, 0)
+PlayerPic.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+UIAspectRatioConstraint.Parent = PlayerPic
+UIAspectRatioConstraint.AspectRatio = 1.012
+
+game.Players.LocalPlayer.Backpack.Main.LockOnScript.LockOn.Changed:Connect(function(player)
+    if player ~= nil then
+        User.Text = player.Name
+        game.Players[player.Name]:GetThumbnailAsync(game.Players[player.Name].userId, Enum.ThumbnailType.AvatarBust, Enum.ThumbnailSize.Size420x420)
+        workspace[player.Name]:FindFirstChild("Humanoid").HealthChanged:Connect(function()
+            local humanoid = workspace[player.Name]:FindFirstChild("Humanoid")
+            Health_2:TweenSize(UDim2.new(humanoid.Health/humanoid.MaxHealth,0,.312,0), "Out", "Quad", .25)
+            HealthTag.Text = humanoid.Health .. " / " ..humanoid.MaxHealth
+        end)
+    elseif player == nil then
+        return
+    end
+end)
